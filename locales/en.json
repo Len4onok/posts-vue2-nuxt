@@ -1,0 +1,52 @@
+{
+  "messages": {
+    "alpha": "The {_field_} field may only contain alphabetic characters",
+    "alpha_num": "The {_field_} field may only contain alpha-numeric characters",
+    "alpha_dash": "The {_field_} field may contain alpha-numeric characters as well as dashes and underscores",
+    "alpha_spaces": "The {_field_} field may only contain alphabetic characters as well as spaces",
+    "between": "The {_field_} field must be between {min} and {max}",
+    "confirmed": "The {_field_} field confirmation does not match",
+    "digits": "The {_field_} field must be numeric and exactly contain {length} digits",
+    "dimensions": "The {_field_} field must be {width} pixels by {height} pixels",
+    "email": "The {_field_} field must be a valid email",
+    "excluded": "The {_field_} field is not a valid value",
+    "ext": "The {_field_} field is not a valid file",
+    "image": "The {_field_} field must be an image",
+    "integer": "The {_field_} field must be an integer",
+    "length": "The {_field_} field must be {length} long",
+    "max_value": "The {_field_} field must be {max} or less",
+    "max": "The {_field_} field may not be greater than {length} characters",
+    "mimes": "The {_field_} field must have a valid file type",
+    "min_value": "The {_field_} field must be {min} or more",
+    "min": "The {_field_} field must be at least {length} characters",
+    "numeric": "The {_field_} field may only contain numeric characters",
+    "oneOf": "The {_field_} field is not a valid value",
+    "regex": "The {_field_} field format is invalid",
+    "required_if": "The {_field_} field is required",
+    "required": "The {_field_} is required",
+    "size": "The {_field_} field size must be less than {size}KB"
+  },
+  "task": {
+    "title": "Task",
+    "description": "Using Vue 2, implement a blog where you can create / delete posts. The post consists of a title (up to 255 characters), a text description (4096 characters) and up to 10 tags. \n The main page displays a list of all posts with their tags. Top button - create a new post. When you click on it, you go to the page where the usual form is the name (input), description (textarea), the button \"Add another tag\" at the bottom - a field (input) appears for entering the name of the tag, next to the button \"Delete tag\". \n The post model has the structure {id, name, description, tags: []}. The tag model is {id, post_id, name}. If the tags array is empty, then the post has no tags. When a new tag is added, a new tag is added to the post model in the tags array, and when removed, it is removed from the array. At the bottom of the form, the save button - when pressed - a POST request with data to example.com/api/posts, then the transition to the main one takes place. \n For the main page, you can create a json file consisting of an array of posts with tags, fill it with fake data and pull data from there by simulating an api request via axios.get('posts.json') or simply insert json directly into the vue code.\n Near each post, the \"Delete\" button - DELETE request to example.com/api/posts/{post_id}, then the post is deleted without reloading the page. You can leave the post in the json file.\n The design is not important, it's good if the ElementUI framework (https://element.eleme.io) is used. For requests to api use axios, for localization vue-i18n (one Russian language is enough)"
+  },
+  "title": "Posts",
+  "button": {
+    "addPost": "+ Add new post",
+    "save": "Save",
+    "addTag": "+ New Tag",
+    "deletePost": "Delete post"
+  },
+  "placeholder": {
+    "enterTitle": "Enter title",
+    "enterDescription": "Enter description"
+  },
+  "label": {
+    "title": "Title",
+    "description": "Description"
+  },
+  "notification": {
+    "error": "Error",
+    "default": "Something went wrong, please try again later"
+  }
+}

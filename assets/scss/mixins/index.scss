@@ -1,0 +1,22 @@
+@import 'breakpoints';
+@import 'container';
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: max-content;
+  min-width: 100px;
+  border: 1px solid var(--borderColor);
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: var(--transition);
+  &:hover {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+  }
+}
+
