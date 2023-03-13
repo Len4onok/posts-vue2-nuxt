@@ -46,7 +46,7 @@ export default Vue.extend({
   },
   methods: {
     handleClose (tag) {
-      this.dynamicTags.splice(this.dynamicTags.indexOf(tag), 1)
+      this.dynamicTags = this.dynamicTags.filter(item => item.id !== tag.id)
       this.$emit('change', this.dynamicTags)
     },
 
