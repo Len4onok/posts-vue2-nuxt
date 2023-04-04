@@ -1,5 +1,4 @@
 import type { ActionContext, ActionTree } from 'vuex'
-import axios from 'axios'
 import { MutationsPosts, TMutationsPosts } from './mutations'
 import { IPostsState } from '@/store/posts/state'
 import { IPost } from '~/store/posts/types'
