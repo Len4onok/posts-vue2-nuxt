@@ -16,10 +16,10 @@
 
 <script lang="ts">
 import Vue, { VueConstructor } from 'vue'
+import MainVue from '~/mixins/MainVue'
 import { mapActions, mapGetters } from 'vuex'
 import PostCard from '~/components/Post/index.vue'
 import { routesPath } from '~/configs/routesPath'
-import MainVue from '~/mixins/MainVue'
 
 export default (Vue as VueConstructor<Vue & InstanceType<typeof MainVue>>).extend({
   name: 'index-page',
